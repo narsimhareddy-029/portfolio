@@ -1,0 +1,148 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #85a2d7, #3a77e1, #6dd5ed);
+  background-size: 300% 300%;
+  animation: gradientMove 10s ease infinite;
+  color: #ebe4e4;
+}
+
+/* Background Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== Main Layout (Sidebar Style) ===== */
+.main-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.sidebar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid rgb(233, 183, 183);
+  margin-bottom: 15px;
+}
+
+.sidebar h1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.sidebar p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Navigation */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.navbar li {
+  margin: 15px 0;
+}
+
+.navbar a {
+  padding: 8px 15px;
+  display: inline-block;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Content Area ===== */
+.content {
+  padding: 40px;
+}
+
+/* Glass Sections */
+.section-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+
+.section-box:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin-bottom: 15px;
+  border-left: 5px solid #fff;
+  padding-left: 10px;
+}
+
+/* ===== Skills Grid ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    padding: 20px;
+  }
+}
+.nav-bar
+{
+    background-color: black;
+    width: fit-content;
+    padding: 25px;
+    border-radius: 35px;
+    font-size: 25px;
+    font-weight: bold;
+}
